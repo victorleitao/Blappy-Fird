@@ -13,7 +13,9 @@ public class PlayerController : MonoBehaviour
     public GameObject leftWing;
     public GameObject rightWing;
     public GameObject openedLeftEye;
+    public GameObject closedLeftEye;
     public GameObject openedRightEye;
+    public GameObject closedRightEye;
     private float wingAngle = 0;
     private float blinkCooldown = 0f;
     [Tooltip("Duration of the closed eyes.")]
@@ -101,11 +103,15 @@ public class PlayerController : MonoBehaviour
     private IEnumerator Blink(float duration)
     {
         openedLeftEye.SetActive(false);
+        closedLeftEye.SetActive(true);
         openedRightEye.SetActive(false);
+        closedRightEye.SetActive(true);
 
         yield return new WaitForSeconds(duration);
 
         openedLeftEye.SetActive(true);
+        closedLeftEye.SetActive(false);
         openedRightEye.SetActive(true);
+        closedRightEye.SetActive(false);
     }
 }

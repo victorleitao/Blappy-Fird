@@ -521,7 +521,9 @@ MonoBehaviour:
   leftWing: {fileID: 1995339721735232661}
   rightWing: {fileID: 611718034481830704}
   openedLeftEye: {fileID: 6416831401337917299}
+  closedLeftEye: {fileID: 5223258554527197626}
   openedRightEye: {fileID: 5547959778709938553}
+  closedRightEye: {fileID: 8513441060392539126}
   blinkDuration: 0.15
   blinkInterval: {x: 2, y: 5}
 --- !u!1 &3166084547960022237
@@ -721,7 +723,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7952399827140975854
 Transform:
   m_ObjectHideFlags: 0
@@ -1271,7 +1273,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7317142128655453845
 Transform:
   m_ObjectHideFlags: 0
